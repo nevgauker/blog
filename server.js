@@ -12,7 +12,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.listen(process.env.YOUR_PORT || 3000);
+app.listen(process.env.PORT || 3000);
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
